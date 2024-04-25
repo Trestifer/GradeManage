@@ -131,9 +131,6 @@ public class Student {
       major= sc.nextLine();
  
     }
-    void xuat(){
-        Sýtem.out.print
-    }
-    
+    //Tâm đã ghi thêm dòng này
 
 }
