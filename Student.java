@@ -105,11 +105,11 @@ public class Student {
         this.major = major;
     }
     void nhap(){
-      System.out.print("Nhap Ma hoc sinh: ");
+      System.out.print("Nhập mã học sinh: ");
       studentId= sc.nextLine();
-      System.out.print("Nhap ten: ");
+      System.out.print("Nhập tên: ");
       name= sc.nextLine();
-      System.out.print("Nhap ngay sinh: ");
+      System.out.print("Nhập ngày tháng năm sinh: ");
       String ngaysinh = sc.nextLine();
         try {
             dob = LocalDate.parse(ngaysinh, DateTimeFormatter.ofPattern("dd/MM/yyyy"));
@@ -117,11 +117,11 @@ public class Student {
             System.err.println("Ngày sản xuất không hợp lệ: " + e.getMessage());
             ngaysinh=sc.nextLine();
         }
-      System.out.print("Nhap gioi tinh: ");
+      System.out.print("Nhập giới tính: ");
       gender=sc.nextLine();
-      System.out.print("Nhap dia chi");
+      System.out.print("Nhập địa chỉ");
       address=sc.nextLine();
-      System.out.print("Nhap so dien thoai: ");
+      System.out.print("Nhap số điện thoại: ");
       phone=sc.nextLine();
       System.out.print("Nhap email: ");
       email= sc.nextLine();
